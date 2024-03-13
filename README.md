@@ -1,4 +1,4 @@
-# Golden_Fish
+# Golden Fish
 
 
 Fancy forecasts plots.
