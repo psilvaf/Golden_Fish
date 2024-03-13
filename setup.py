@@ -15,4 +15,4 @@ setup(name='golden_fish',
 	"numpy",
 	'scipy',
 	'pandas',
-	'matplotlib.pyplot'],)
+	'matplotlib'],)

@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+golden_fish/ellipse_plot.py
+golden_fish/plot_histogram.py
+golden_fish.egg-info/PKG-INFO
+golden_fish.egg-info/SOURCES.txt
+golden_fish.egg-info/dependency_links.txt
+golden_fish.egg-info/requires.txt
+golden_fish.egg-info/top_level.txt
