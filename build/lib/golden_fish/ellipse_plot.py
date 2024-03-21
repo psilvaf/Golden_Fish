@@ -27,11 +27,11 @@ def plot_ellipse(center,cov_final,par_names,legends):
     fig, ax = plt.subplots()
     ax.set_xlabel(par_names[0])
     ax.set_ylabel(par_names[1])
-    colors=['blue','salmon','black']
-    line_type=['-','-','--']
-    line_thickness=[1,4,1]
+    colors=['black','salmon','blue'][:len(legends)]
+    line_type=['--','-','-'][:len(legends)]
+    line_thickness=[1,2,1][:len(legends)]
     for i in range(len(colors)):
         x_sigma, y_sigma = get_ellipse(center, cov_final[i], nsigma=1)
-        ax.plot(x_1sigma, y_1sigma,color=colors[i], label=legends[i],lw=line_thickness[i])
+        ax.plot(x_sigma, y_sigma,line_type[i],color=colors[i], label=legends[i],lw=line_thickness[i])
     ax.legend();
     return
