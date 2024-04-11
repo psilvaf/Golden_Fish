@@ -22,6 +22,18 @@ def get_ellipse(center: np.ndarray, cova: np.ndarray, nsigma: int = 1, npoints: 
     circle = np.column_stack([np.cos(t), np.sin(t)])
     ellipse = nsigma * circle @ cholesky_l.T + center
     return ellipse.T
+
+def get_params(matrix):
+    idx = []
+    for m in range(matrix.shape[0]):
+        for n in range(m+1,matrix.shape[0]):
+            idx.append([m,n])
+    idx = np.array(idx)
+    mats=[]
+    for n in range(idx.shape[0]):
+        i,j = idx[n]
+        mats.append(np.array([[matrix[i,i],matrix[i,j]],[matrix[j,i],matrix[j,j]]]))
+    return mats
     
 def plot_ellipse(center,cov_final,par_names,legends):
     fig, ax = plt.subplots()

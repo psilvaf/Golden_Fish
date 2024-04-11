@@ -1,6 +1,7 @@
 LICENSE.md
 README.md
 setup.py
+golden_fish/analyse_areas.py
 golden_fish/ellipse_plot.py
 golden_fish/plot_histogram.py
 golden_fish.egg-info/PKG-INFO
