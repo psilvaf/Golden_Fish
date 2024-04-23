@@ -24,6 +24,8 @@ def get_ellipse(center: np.ndarray, cova: np.ndarray, nsigma: int = 1, npoints: 
     return ellipse.T
 
 def get_params(matrix):
+
+
     idx = []
     for m in range(matrix.shape[0]):
         for n in range(m+1,matrix.shape[0]):
