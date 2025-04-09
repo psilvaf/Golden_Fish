@@ -1,8 +1,13 @@
 Metadata-Version: 2.1
-Name: golden-fish
+Name: golden_fish
 Version: 0.1.0
 Summary: Fisher Forecast plots.
 Author: Paula Ferreira
 Author-email: psilf12@gmail.com
 License: LICENSE.txt
 License-File: LICENSE.md
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
